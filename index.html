@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Shape of What Left</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: #0f0f0f;
+  color: #e6e6e6;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT SIDE */
+
+.left {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, #0f0f0f 80%, #111);
+}
+
+.author {
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #e3c9a3;
+}
+
+.description {
+  max-width: 500px;
+  opacity: 0.7;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* FORM */
+
+form {
+  max-width: 400px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  color: white;
+  font-size: 0.95rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #e3c9a3;
+  border: none;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #cbb38f;
+}
+
+/* RIGHT SIDE */
+
+.right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER SECTION */
+
+.bottom {
+  background: #0a0a0a;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.bottom h2 {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.socials {
+  margin-top: 40px;
+}
+
+.socials a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.socials a:hover {
+  color: #e3c9a3;
+}
+
+/* MOBILE */
+
+@media(max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left">
+  <div class="author">ANURAAG SRIVASTAVA</div>
+
+  <h1>THE SHAPE OF<br>WHAT LEFT</h1>
+
+  <p class="description">
+    A forthcoming poetry collection.  
+    Leave your email. I will reach out when the work is released.
+  </p>
+
+  <!-- Replace action with your Formspree link -->
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">NOTIFY ME</button>
+  </form>
+</div>
+
+<div class="right">
+  <!-- Replace with your image filename later -->
+  <img src="your-image.jpg" alt="The Shape of What Left">
+</div>
+
+</div>
+
+<div class="bottom">
+  <h2>RECENT READING</h2>
+
+  <!-- Replace with your YouTube video ID -->
+  <iframe width="700" height="400"
+  src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+  frameborder="0"
+  allowfullscreen></iframe>
+
+  <div class="socials">
+    <a href="#">YouTube</a>
+    <a href="#">Instagram</a>
+    <a href="#">Substack</a>
+  </div>
+</div>
+
+</body>
+</html>
